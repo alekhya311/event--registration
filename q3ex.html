@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Simple User Registration Form</title>
+</head>
+<body>
+<h1>Event Registration Form</h1>
+<form>
+<label>Name:</label>
+<input type="text" name="name"
+ pattern="[A-Za-z ]{3,30}"
+title="Enter a valid name (3-30 letters)"
+required>
+<br><br>
+<label>Email:</label>
+<input type="email" name="email" required>
+<br><br>
+<label>Phone No:</label>
+<input type="tel" name="phoneno"
+ pattern="[6-9][0-9]{9}"
+title="Enter a valid 10-digit mobile number"required><br><br>
+<label>Roll No:</label>
+<input type="text" name="rollno"
+pattern="[A-Za-z0-9]{1,15}"
+title="Enter a valid roll number" required>
+<br><br>
+<label>Event:</label>
+<select name="event" required>
+<option value="">Select Event</option>
+<option value="Technical Event">Technical Event</option>
+<option value="Cultural Event">Cultural Event</option>
+<option value="Hackathon">Hackathon</option>
+</select>
+<br><br>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
